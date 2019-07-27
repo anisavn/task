@@ -8,8 +8,7 @@
     
 
     function validate_username($name){
-        // $pattern = "[]";
-        return (preg_match("/^[a-zA-Z]/",$name)? "$name adalah valid" : "$name invalid");
+         return (preg_match("/^[a-z]{8}$/",$name)? "$name adalah valid" : "$name invalid");
         }
         echo "<br/>" . validate_username("vladimi");
         echo "<br/>" . validate_username("vladimir");
